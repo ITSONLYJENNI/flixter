@@ -1,1 +1,14 @@
 @import "bootstrap";
+
+.navbar {
+  font-family: 'Domine', serif;
+  font-weight: 200px;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('pink_rice.png')
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Domine', serif;
+  font-weight: 100;
+  color: white;
+}
