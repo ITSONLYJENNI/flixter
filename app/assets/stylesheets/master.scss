@@ -33,19 +33,35 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Jomolhari', serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Jomolhari', serif;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .btn {
   border-radius: 0;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  font-family: 'Jomolhari', serif;
+  padding: 10px 0px;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: white;
+  font-weight: 100;
 }
 
 .feature {
