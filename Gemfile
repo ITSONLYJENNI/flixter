@@ -36,7 +36,9 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.11.1'
 gem 'simple_form'
 gem 'devise'
-
+gem 'carrierwave'
+gem 'figaro'
+gem 'fog-aws'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
