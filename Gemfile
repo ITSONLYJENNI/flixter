@@ -37,6 +37,7 @@ gem 'popper_js', '~> 1.11.1'
 gem 'simple_form'
 gem 'devise'
 gem 'carrierwave'
+gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog-aws'
 gem "mini_magick"
