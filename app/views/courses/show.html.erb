@@ -2,7 +2,7 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1><%= @course.title %></h1>
-  <%= image_tag @course.photos, class: 'img-fluid' %>
+  <%= image_tag @course.photos.url, class: 'img-fluid' %>
   <br />
   <div class="row">
     <div class="col-sm-4 col-12">
@@ -15,6 +15,10 @@
         <br />
         <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
       <% end %>
+
+      <br />
+      <br />
+      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary' %>
     </div>
 
     <div class="col-sm-8 col-12">
@@ -23,11 +27,6 @@
   </div>
 
   <div class="clear"></div>
-    <%= simple_form_for @photo, url: courses_photos_path(@course) do |f| %>
-      <%= f.input :caption %>
-      <%= f.input :photo %>
-      <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-    <% end %>
 
   <div class="col-12">
     <% @course.sections.each do |section| %>
