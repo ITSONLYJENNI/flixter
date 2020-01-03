@@ -11,12 +11,14 @@ before_action :require_authorized_for_current_course, only: [:show]
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
-      render :new, status: :unprocessable_entity
+      # render :new, status: :unprocessable_entity
+       flash[:error] = "Please create a new course"
+       redirect_to new_instructor_course
     end
   end
 
   def show
-    
+    @course = Course.find(params[:id])
   end
 
   private
