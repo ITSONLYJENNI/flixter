@@ -4,6 +4,7 @@ class LessonsController < ApplicationController
 
   def create
     @course = current_lesson.section.course(course_params)
+  end
 
   def show
     @course = Lesson.find(params[:id])

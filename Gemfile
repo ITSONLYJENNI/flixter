@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'popper_js', '~> 1.11.1'
 gem 'simple_form'
 gem 'devise'
@@ -40,7 +41,9 @@ gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog-aws'
-gem "mini_magick"
+gem 'mini_magick'
+gem 'stripe'
+gem 'ranked-model'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

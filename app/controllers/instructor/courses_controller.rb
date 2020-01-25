@@ -7,13 +7,17 @@ before_action :require_authorized_for_current_course, only: [:show]
   end
 
   def create
-    @course = current_user.courses.create(course_params)
+    puts current_user
+    puts current_user.courses
+    @course = current_user.courses.create!(course_params)
+  
+    puts @course
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
       # render :new, status: :unprocessable_entity
        flash[:error] = "Please create a new course"
-       redirect_to new_instructor_course
+       # redirect_to new_instructor_course_path
     end
   end
 
@@ -35,6 +39,6 @@ before_action :require_authorized_for_current_course, only: [:show]
   end
 
   def course_params
-    params.require(:course).permit(:title, :description, :cost, :photos)
+    params.require(:course).permit(:title, :description, :cost, :image)
   end
 end
