@@ -44,6 +44,7 @@ gem 'fog-aws'
 gem 'mini_magick'
 gem 'stripe'
 gem 'ranked-model'
+gem 'font-awesome-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
