@@ -22,7 +22,7 @@ before_action :require_authorized_for_current_course, only: [:show]
   end
 
   def show
-    @course = Course.find(params[:id])
+    @section = Section.new
   end
 
   private
